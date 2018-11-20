@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'eclipse-wtp'
+}
+
+repositories {
+    jcenter()  
+}
+
+dependencies {
+    compile 'com.google.guava:guava:21.0'  
+    compile 'org.slf4j:slf4j-api:1.7.12'
+    testCompile 'junit:junit:4.12'         
+}
+
+mainClassName = 'app.App'
+
