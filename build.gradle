@@ -1,18 +1,17 @@
 plugins {
-    id 'java'
-    id 'application'
-    id 'eclipse-wtp'
+    id 'java'           // required for default java build tasks like build, test and javadoc
+    id 'application'    // required for program execution
+    id 'eclipse'        // required for generating eclipse project files
 }
 
 repositories {
-    jcenter()  
+    jcenter()           // remote repository (for downloading dependencies)
 }
 
 dependencies {
-    compile 'com.google.guava:guava:21.0'  
-    compile 'org.slf4j:slf4j-api:1.7.12'
-    testCompile 'junit:junit:4.12'         
+    compile 'com.google.guava:guava:21.0'  // required library for google core libraries for java
+    testCompile 'junit:junit:4.12'         // required library for unit tests
 }
 
-mainClassName = 'app.App'
+mainClassName = 'app.App' // package + class with public static void main method
 

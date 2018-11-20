@@ -1,11 +1,17 @@
 package app;
 
+
+import stack.Stack;
+
 public class App {
-	public String getGreeting() {
-		return "Hello world.";
+	public void exec() {
+		  Stack<Integer> classUnderTest = new Stack<Integer>();
+		  classUnderTest.push(100);
+		  classUnderTest.push(101);
+		  classUnderTest.print();
 	}
 
 	public static void main(String[] args) {
-		System.out.println(new App().getGreeting());
+		new App().exec();
 	}
 }
