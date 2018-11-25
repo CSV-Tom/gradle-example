@@ -1,14 +1,13 @@
 package app;
 
-
 import stack.Stack;
 
 public class App {
 	public void exec() {
-		  Stack<Integer> classUnderTest = new Stack<Integer>();
-		  classUnderTest.push(100);
-		  classUnderTest.push(101);
-		  classUnderTest.print();
+		Stack<Integer> stack = new Stack<Integer>();
+		stack.push(100);
+		stack.push(101);
+		stack.print();
 	}
 
 	public static void main(String[] args) {
