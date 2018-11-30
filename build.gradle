@@ -13,5 +13,9 @@ dependencies {
     testCompile 'junit:junit:4.12'         // required library for unit tests
 }
 
+run {
+    standardInput = System.in
+}
+
 mainClassName = 'app.App' // package + class with public static void main method
 
