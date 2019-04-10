@@ -11,8 +11,8 @@ If you are using gradle without the wrapper you would have to manually install g
 In both cases you are using gradle, but the former solution is more convenient and ensures version consistency across different machines.
 The official installation instructions can be found under the following links:
 
-* Install Gradle on Windows : https://docs.gradle.org/4.10.2/userguide/installation.html#microsoft_windows_users_2
-* Install Gradle on Linux or Mac OS : https://docs.gradle.org/4.10.2/userguide/installation.html#linux_macos_users_2
+* Install Gradle on Windows : https://docs.gradle.org/5.3.1/userguide/installation.html#microsoft_windows_users_2
+* Install Gradle on Linux or Mac OS : https://docs.gradle.org/5.3.1/userguide/installation.html#linux_macos_users_2
 
 
 __Important:__ Installation is only required if the gradle wrapper not exists in the project directory. The example project already contains a gradle wrapper for Windows and Unix.
@@ -31,8 +31,8 @@ __Important:__ Installation is only required if the gradle wrapper not exists in
 4. Unzip the project and change to the root level of the sample project.
 5. Execute command `gradlew` or `./gradlew` in the command line. Check that the firewall is not causing you any trouble.
    ```
-   Welcome to Gradle 4.10.2!
-
+   Welcome to Gradle 5.3.1!
+   
    Here are the highlights of this release:
     - Incremental Java compilation by default
     - Periodic Gradle caches cleanup
@@ -40,7 +40,7 @@ __Important:__ Installation is only required if the gradle wrapper not exists in
     - Nested included builds
     - SNAPSHOT plugin versions in the `plugins {}` block
 
-   For more details see https://docs.gradle.org/4.10.2/release-notes.html
+   For more details see https://docs.gradle.org/5.3.1/release-notes.html
    ```
 
 6. Troubleshooting:
@@ -124,11 +124,11 @@ Manual installation steps for gradle on Linux or Windows
 
 ```
 cd /tmp
-wget https://services.gradle.org/distributions/gradle-4.10.2-bin.zip
+wget https://services.gradle.org/distributions/gradle-5.3.1-bin.zip
 sudo mkdir /opt/gradle
-sudo unzip -d /opt/gradle gradle-4.10.2-bin.zip
-ls /opt/gradle/gradle-4.10.2
-export PATH=$PATH:/opt/gradle/gradle-4.10.2/bin
+sudo unzip -d /opt/gradle gradle-5.3.1-bin.zip
+ls /opt/gradle/gradle-5.3.1
+export PATH=$PATH:/opt/gradle/gradle-5.3.1/bin
 ```
 So that the program gradle is available in every command line, it can be added to the `.bashrc` or `.profile`.
 
@@ -141,11 +141,11 @@ mkdir myproject
 cd myproject
 gradle init
 ```
-
+ 
 # References
-
+ 
 See for more information:
 
 * https://www.tutorialspoint.com/gradle/gradle_build_a_java_project.htm
-* https://docs.gradle.org/4.10.2/userguide/gradle_wrapper.html
-* https://docs.gradle.org/4.10.2/userguide/installation.html#installation
+* https://docs.gradle.org/5.3.1/userguide/gradle_wrapper.html
+* https://docs.gradle.org/5.3.1/userguide/installation.html#installation
