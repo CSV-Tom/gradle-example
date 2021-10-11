@@ -3,7 +3,6 @@ package stack;
 import org.junit.Assert;
 import org.junit.Test;
 
-import stack.Stack;
 
 public class StackTest {
 
@@ -15,8 +14,8 @@ public class StackTest {
 		Assert.assertTrue(classUnderTest.isEmpty());
 		Assert.assertEquals(classUnderTest.size(), 0);
 
-		classUnderTest.push(new Integer(100));
-		classUnderTest.push(new Integer(101));
+		classUnderTest.push(Integer.valueOf(100));
+		classUnderTest.push(Integer.valueOf(101));
 
 		Assert.assertFalse(classUnderTest.isEmpty());
 		Assert.assertEquals(classUnderTest.size(), 2);

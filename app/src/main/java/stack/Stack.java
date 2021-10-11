@@ -2,13 +2,13 @@ package stack;
 
 public class Stack<T> implements Stackable<T> {
 
-	private Node head;
+	private transient Node head;
 
-	private int stackSize;
+	private transient int stackSize;
 
 	private class Node {
-		T obj;
-		Node next;
+		transient T obj;
+		transient Node next;
 	}
 
 	@Override
@@ -38,6 +38,7 @@ public class Stack<T> implements Stackable<T> {
 		return head.obj;
 	}
 
+	@SuppressWarnings("PMD.NullAssignment")
 	@Override
 	public void clear() {
 		head = null;
